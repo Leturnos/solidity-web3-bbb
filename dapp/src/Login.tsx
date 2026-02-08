@@ -1,10 +1,10 @@
 import { useConnect, useConnectors } from 'wagmi'
 
-function Login() {
-  const { connect, error } = useConnect()
-  const connectors = useConnectors()
+export default function Login() {
+    const { connect, error } = useConnect()
+    const connectors = useConnectors()
 
-  return (
+    return (
         <div className='container px-4 py-5'>
             <div className='row flex-lg-row-reverse align-items-center g-5 py-5'>
                 <div className='col-6'>
@@ -33,5 +33,3 @@ function Login() {
         </div>
     )
 }
-
-export default Login
